@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Verde — предложение</title><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box;margin:0}body{background:#0b2a26;color:#f3f7ea;font:400 17px/1.6 Nunito,sans-serif}
+.sky{position:relative;min-height:100svh;overflow:hidden;background:linear-gradient(180deg,#123f45 0%,#2f7a6b 38%,#f1c27d 78%,#f7e3b0 100%)}
+.sun{position:absolute;left:50%;bottom:30%;width:min(34vw,300px);aspect-ratio:1;margin-left:calc(min(34vw,300px)/-2);border-radius:50%;background:radial-gradient(#fff6d0,#ffd27a 55%,transparent 72%);filter:blur(3px);animation:rise 8s ease-in-out infinite alternate}@keyframes rise{to{transform:translateY(-18px) scale(1.06)}}
+.m{position:absolute;left:-5%;right:-5%;bottom:0}.m1{height:38%;background:#4f9a7d;clip-path:polygon(0 70%,12% 35%,26% 60%,42% 20%,58% 55%,74% 28%,88% 58%,100% 40%,100% 100%,0 100%);opacity:.75}
+.m2{height:30%;background:#2a6b5c;clip-path:polygon(0 55%,15% 30%,32% 62%,50% 25%,68% 60%,85% 32%,100% 55%,100% 100%,0 100%);opacity:.9}.m3{height:20%;background:#0f3b34;clip-path:polygon(0 60%,18% 35%,38% 65%,60% 30%,80% 62%,100% 38%,100% 100%,0 100%)}
+.hero{position:relative;z-index:2;min-height:100svh;display:grid;place-items:center;padding:28px 18px 18vh;text-align:center}
+.card{max-width:780px;padding:clamp(26px,5vw,56px);border-radius:40px;background:rgba(10,45,40,.38);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(20px);box-shadow:0 30px 90px rgba(5,30,25,.45)}
+.logo{font:800 24px Fraunces,serif;letter-spacing:.06em;color:#d9f5b0}
+h1{font:800 clamp(36px,7vw,68px)/1.05 Fraunces,serif;margin:22px 0 14px}.lead{max-width:520px;margin:0 auto 32px;color:#e3efdc}
+.go{display:inline-flex;align-items:center;justify-content:center;min-height:68px;padding:0 56px;border-radius:99px;font:800 21px Nunito,sans-serif;letter-spacing:.1em;color:#08301f;text-decoration:none;background:linear-gradient(135deg,#e6ff9a,#7be495 55%,#2fbf8a);box-shadow:inset 0 2px 0 rgba(255,255,255,.7),0 14px 40px rgba(123,228,149,.5);animation:breathe 3.4s ease-in-out infinite;transition:transform .2s}
+@keyframes breathe{50%{box-shadow:inset 0 2px 0 rgba(255,255,255,.7),0 18px 60px rgba(123,228,149,.85)}}.go:hover{transform:translateY(-4px) scale(1.04)}.go:active{transform:scale(.96)}.go:focus-visible{outline:3px solid #fff;outline-offset:5px}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:36px;text-align:left}.adv div{padding:16px 18px;border-radius:22px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2)}.adv b{display:block;font-family:Fraunces,serif;font-size:19px;color:#d9f5b0}.adv span{font-size:14px;color:#e3efdc}
+.info{max-width:780px;margin:0 auto;padding:30px 18px 0}.info div{padding:24px;border-radius:26px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);font-size:15px;color:#cfe3d6}
+.foot{max-width:960px;margin:0 auto;padding:28px 20px 40px;font-size:14px;opacity:.78;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot a{color:inherit}.foot details{max-width:440px}.foot summary{cursor:pointer}.foot p{margin-top:8px;line-height:1.5}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}</style></head><body><section class="sky"><div class="sun"></div><div class="m m1"></div><div class="m m2"></div><div class="m m3"></div>
+<div class="hero"><div class="card"><div class="logo">🌿 Verde</div><h1>Иногда лучшее решение лежит на поверхности</h1><p class="lead">Загляните на страницу партнёра, спокойно изучите предложение и выберите то, что подходит именно вам.</p>
+<a class="go" href="#">ПЕРЕЙТИ →</a>
+<div class="adv"><div><b>Официально</b><span>Переход на сайт рекламодателя</span></div><div><b>Понятно</b><span>Условия указаны на странице оффера</span></div><div><b>Удобно</b><span>Отлично выглядит на телефоне</span></div></div></div></div></section>
+<section class="info"><div>Страница партнёрская: за переход мы можем получить вознаграждение, для вас цена не меняется. Условия предложения определяет рекламодатель.</div></section><footer class="foot"><div>© 2026 Название проекта<br><a href="mailto:hello@example.com">hello@example.com</a></div><details><summary>Политика конфиденциальности</summary><p>Эта страница не собирает и не хранит персональные данные. Кнопка ведёт на сайт рекламодателя, у которого действует собственная политика конфиденциальности. Ссылка партнёрская: мы можем получить вознаграждение, для вас цена не меняется.</p></details></footer><script>
+/* ===== ЗАМЕНИТЕ ПАРТНЁРСКУЮ ССЫЛКУ ТОЛЬКО ЗДЕСЬ ===== */
+const AFFILIATE_URL = "https://example.com/your-affiliate-link";
+/* ================================================== */
+const q = location.search.slice(1);
+document.querySelectorAll(".go").forEach(a => {
+  a.href = q ? AFFILIATE_URL + (AFFILIATE_URL.includes("?") ? "&" : "?") + q : AFFILIATE_URL;
+  a.rel = "sponsored noopener";
+});
+</script></body></html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>AURUM — предложение для вас</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box;margin:0}body{background:#050505;color:#efe6d2;font:400 17px/1.6 Manrope,sans-serif;background-image:radial-gradient(60% 50% at 50% 0%,rgba(212,160,58,.22),transparent 70%),radial-gradient(40% 40% at 90% 80%,rgba(190,190,205,.08),transparent 70%)}
+.hero{min-height:100svh;display:grid;place-items:center;padding:28px 20px;text-align:center}.in{max-width:760px}
+.logo{display:inline-flex;align-items:center;gap:10px;font:700 22px 'Cormorant Garamond',serif;letter-spacing:.35em;color:#e6c06a}.logo i{width:12px;height:12px;background:linear-gradient(135deg,#fff3c4,#b8862b);transform:rotate(45deg)}
+h1{font:700 clamp(40px,8vw,84px)/1 'Cormorant Garamond',serif;margin:34px 0 20px;background:linear-gradient(180deg,#fff7dc,#e0b252 55%,#8c6418);-webkit-background-clip:text;color:transparent}
+.lead{max-width:540px;margin:0 auto 38px;color:#cfc6b0}
+.go{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:68px;padding:0 64px;border-radius:99px;overflow:hidden;font:700 22px Manrope,sans-serif;letter-spacing:.14em;color:#2a1b00;text-decoration:none;background:linear-gradient(#fff0b3,#e3ac41 48%,#a8731a);box-shadow:inset 0 2px 0 rgba(255,255,255,.7),inset 0 -5px 10px rgba(90,50,0,.4),0 12px 0 #6b470c,0 26px 60px rgba(224,172,65,.45);animation:pulse 3s ease-in-out infinite;transition:transform .15s,box-shadow .15s}
+.go::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-20deg);animation:shine 3.6s infinite}
+.go:hover{transform:translateY(-3px)}.go:active{transform:translateY(8px);box-shadow:inset 0 2px 0 rgba(255,255,255,.7),inset 0 -5px 10px rgba(90,50,0,.4),0 4px 0 #6b470c,0 10px 30px rgba(224,172,65,.4)}.go:focus-visible{outline:3px solid #fff;outline-offset:6px}
+@keyframes shine{60%,100%{left:130%}}@keyframes pulse{50%{filter:brightness(1.08)}}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:64px auto 0;max-width:860px}.adv div{padding:22px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid rgba(230,192,106,.28);backdrop-filter:blur(10px);text-align:left}.adv b{display:block;font:700 22px 'Cormorant Garamond',serif;color:#e6c06a;margin-bottom:4px}.adv span{font-size:15px;color:#bdb49e}
+.info{max-width:760px;margin:0 auto;padding:0 20px 20px}.info div{padding:26px;border-radius:22px;border:1px solid rgba(230,192,106,.22);background:rgba(255,255,255,.03);font-size:15px;color:#bdb49e}.info b{color:#e6c06a}
+.foot{max-width:960px;margin:0 auto;padding:28px 20px 40px;font-size:14px;opacity:.78;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot a{color:inherit}.foot details{max-width:440px}.foot summary{cursor:pointer}.foot p{margin-top:8px;line-height:1.5}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}</style></head><body><section class="hero"><div class="in"><div class="logo"><i></i>AURUM</div>
+<h1>Выбор, который стоит увидеть</h1><p class="lead">Мы собрали для вас предложение от проверенного партнёра. Откройте страницу, изучите условия и решите сами — спокойно и без спешки.</p>
+<a class="go" href="#">ПЕРЕЙТИ →</a>
+<div class="adv"><div><b>Официальный сайт</b><span>Вы попадаете прямо на страницу рекламодателя</span></div><div><b>Условия на виду</b><span>Все детали указаны на странице предложения</span></div><div><b>Удобно везде</b><span>Одинаково хорошо работает на телефоне и компьютере</span></div></div></div></section>
+<section class="info"><div><b>Важно знать.</b> Эта страница — партнёрская. Окончательные условия, цены и правила определяет рекламодатель. Перед принятием решения внимательно изучите их на его сайте.</div></section><footer class="foot"><div>© 2026 Название проекта<br><a href="mailto:hello@example.com">hello@example.com</a></div><details><summary>Политика конфиденциальности</summary><p>Эта страница не собирает и не хранит персональные данные. Кнопка ведёт на сайт рекламодателя, у которого действует собственная политика конфиденциальности. Ссылка партнёрская: мы можем получить вознаграждение, для вас цена не меняется.</p></details></footer><script>
+/* ===== ЗАМЕНИТЕ ПАРТНЁРСКУЮ ССЫЛКУ ТОЛЬКО ЗДЕСЬ ===== */
+const AFFILIATE_URL = "https://example.com/your-affiliate-link";
+/* ================================================== */
+const q = location.search.slice(1);
+document.querySelectorAll(".go").forEach(a => {
+  a.href = q ? AFFILIATE_URL + (AFFILIATE_URL.includes("?") ? "&" : "?") + q : AFFILIATE_URL;
+  a.rel = "sponsored noopener";
+});
+</script></body></html>

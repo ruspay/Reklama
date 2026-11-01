@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>NEON — предложение</title><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Orbitron:wght@800&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box;margin:0}body{background:#04000d;color:#e8e4ff;font:400 18px/1.55 'Chakra Petch',sans-serif;overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(50% 40% at 20% 10%,rgba(255,0,170,.28),transparent 70%),radial-gradient(50% 40% at 85% 80%,rgba(0,240,255,.25),transparent 70%)}
+.bg::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,240,255,.08) 0 1px,transparent 1px 4px)}
+.bg::after{content:"";position:absolute;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#00f0ff,#ff00aa,transparent);box-shadow:0 0 22px #00f0ff;animation:scan 6s linear infinite}@keyframes scan{from{top:-5%}to{top:105%}}
+.hero{min-height:100svh;display:grid;place-items:center;padding:28px 18px;text-align:center}.in{max-width:820px}
+.logo{font:800 22px Orbitron,sans-serif;letter-spacing:.3em;color:#00f0ff;text-shadow:0 0 14px #00f0ff}
+h1{font:800 clamp(32px,7vw,70px)/1.06 Orbitron,sans-serif;text-transform:uppercase;margin:30px 0 20px;color:#fff;text-shadow:0 0 6px #fff,0 0 26px #ff00aa,0 0 70px #ff00aa}
+.lead{max-width:540px;margin:0 auto 42px;color:#cfc8f5}
+.go{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:70px;padding:0 62px;font:800 21px Orbitron,sans-serif;letter-spacing:.14em;color:#fff;text-decoration:none;border:3px solid #00f0ff;border-radius:6px;clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px);background:linear-gradient(120deg,rgba(0,240,255,.2),rgba(255,0,170,.25));text-shadow:0 0 12px #fff;animation:glow 2.2s ease-in-out infinite;transition:transform .15s,background .2s}
+@keyframes glow{50%{filter:drop-shadow(0 0 20px #00f0ff) drop-shadow(0 0 40px #ff00aa)}}.go{filter:drop-shadow(0 0 10px #00f0ff)}
+.go:hover{background:linear-gradient(120deg,#00f0ff,#ff00aa);transform:scale(1.06)}.go:active{transform:scale(.94)}.go:focus-visible{outline:3px solid #fff;outline-offset:6px}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-top:58px;text-align:left}.adv div{padding:20px;border:1px solid rgba(0,240,255,.45);border-left:4px solid #ff00aa;background:rgba(0,240,255,.05);box-shadow:inset 0 0 30px rgba(0,240,255,.07)}.adv b{display:block;color:#00f0ff;font-weight:700}.adv span{font-size:15px;color:#b9b2e4}
+.info{max-width:820px;margin:0 auto;padding:0 18px 10px}.info div{padding:22px;border:1px dashed rgba(255,0,170,.5);font-size:15px;color:#b9b2e4}
+.foot{max-width:960px;margin:0 auto;padding:28px 20px 40px;font-size:14px;opacity:.78;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot a{color:inherit}.foot details{max-width:440px}.foot summary{cursor:pointer}.foot p{margin-top:8px;line-height:1.5}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}</style></head><body><div class="bg"></div><section class="hero"><div class="in"><div class="logo">NEON//LAB</div>
+<h1>Включи свой следующий уровень</h1><p class="lead">Мы нашли предложение, которое стоит увидеть. Нажми кнопку, открой страницу партнёра и изучи условия сам.</p>
+<a class="go" href="#">ПЕРЕЙТИ →</a>
+<div class="adv"><div><b>Прямой переход</b><span>Открывается официальный сайт рекламодателя</span></div><div><b>Условия открыто</b><span>Правила и цены указаны на странице оффера</span></div><div><b>Любой экран</b><span>Телефон, планшет, компьютер</span></div></div></div></section>
+<section class="info"><div>Это партнёрская страница. Мы можем получить вознаграждение за переход, на вашу цену это не влияет. Условия определяет рекламодатель.</div></section><footer class="foot"><div>© 2026 Название проекта<br><a href="mailto:hello@example.com">hello@example.com</a></div><details><summary>Политика конфиденциальности</summary><p>Эта страница не собирает и не хранит персональные данные. Кнопка ведёт на сайт рекламодателя, у которого действует собственная политика конфиденциальности. Ссылка партнёрская: мы можем получить вознаграждение, для вас цена не меняется.</p></details></footer><script>
+/* ===== ЗАМЕНИТЕ ПАРТНЁРСКУЮ ССЫЛКУ ТОЛЬКО ЗДЕСЬ ===== */
+const AFFILIATE_URL = "https://example.com/your-affiliate-link";
+/* ================================================== */
+const q = location.search.slice(1);
+document.querySelectorAll(".go").forEach(a => {
+  a.href = q ? AFFILIATE_URL + (AFFILIATE_URL.includes("?") ? "&" : "?") + q : AFFILIATE_URL;
+  a.rel = "sponsored noopener";
+});
+</script></body></html>
